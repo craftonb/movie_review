@@ -7,24 +7,24 @@ set :user , "briancra"
 set :server_name, "www.briancrafton.com"
 # Your svn / git login name
 
-set :scm_username , "scmuser"
+set :scm_username , "craftonb"
 set :scm_password, Proc.new { CLI.password_prompt "SVN Password: "}
 
 # Your repository type, by default we use subversion. 
 
-set :scm, :subversion
+#set :scm, :subversion
 
 # If you are using git, uncomment the following line and comment out the line above.
-#set :scm, :git
+set :scm, :git
 
 # The name of your application, this will also be the folder were your application 
 
 # will be deployed to
 
-set :application, "applicationname"
+set :application, "movie_review"
 
 # the url for your repository
-set :repository,  "http://yoursubdomain.svnrepository.com/svn/#{application}"
+set :repository,  "https://github.com/craftonb/movie_review"
 
 ###### There is no need to edit anything below this line ######
 
